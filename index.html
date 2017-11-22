@@ -1,16 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<body>
-
-<h2>JavaScript can Change HTML</h2>
-
-<p id="p1">Old text!</p>
-
-<script>
-document.getElementById("p1").innerHTML = "New changed text!";
-</script>
-
-<p>Just change the part above!.</p>
-
-</body>
+	<head>
+		<script src="https://aframe.io/release/0.2.0/aframe.min.js">
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<img id="texture" src="img/texture.jpg" />
+			</a-assets>
+			<a-box width="1" height="1" depth="1"
+				position="0 0 0"
+				rotation="45 45 45"
+				scale="1 2.5 1"
+				scr="#texture">
+				<a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+			</a-box>
+		</a-scene>
+	</body>
 </html>
