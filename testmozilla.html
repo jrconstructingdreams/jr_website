@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js">	</script>
+</head>
+<body>
+	<a-scene>
+		<a-sphere
+			color="red"
+			position="0 1 -8"
+		></a-sphere>
+		<a-box
+			color="green"
+			width="10"	height="1"	depth="2"
+			position="0 -1 -10"
+		></a-box>
+		<!--COMMENT: 1st and 2nd end PLANE-->
+		<a-plane	color="magenta"	width="20.00"	height="6"			position="0.00 -3.20 -10"	rotation="-90 0 0"></a-plane>
+		<!--COMMENT: 1st end-->
+			<a-cylinder	color="blue"	radius="0.5"	height="2.00"			position="-5.00 -2.00 -10"	rotation="90 0 0"></a-cylinder>
+			<a-box		color="blue"	width="1.00"	height="2.00"	depth="2.00"	position="-5.00 -3.00 -10"			></a-box>
+			<a-box		color="blue"	width="1.50"	height="0.20"	depth="2.50"	position="-5.00 -3.20 -10"			></a-box>
+		<!--COMMENT: 2nd end-->
+			<a-cylinder	color="blue"	radius="0.80"	height="2.00"			position="5.00 -2.30 -10"	rotation="90 0 0"></a-cylinder>
+			<a-box		color="blue"	width="1.50"	height="0.20"	depth="2.50"	position="5.00 -3.20 -10"			></a-box>
+	</a-scene>
+</body>
+</html>
